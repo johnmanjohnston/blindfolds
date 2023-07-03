@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;200;300;400&display=swap");
+html, body {
+  font-family: "JetBrains Mono", monospace;
+  padding: 0px;
+  margin: 0px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+html *::selection, body *::selection {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  /* Remove scrollbar space */
+  background: transparent;
+  /* Optional: just make scrollbar invisible */
+}
+
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #FF0000;
+}
+
+.Slide {
+  white-space: nowrap;
+}
+.Slide .Slide-Title {
+  text-align: center;
+  padding: 5vw 2vw 0vw 2vw;
+}
+.Slide .Slide-Content {
+  text-align: left;
+  padding: 0vw 3vw;
+}
+
+.Importance {
+  color: indianred;
+}
+
+@keyframes FadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes FadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes Typing {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+.Type {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: Typing 1s steps(45);
+}
+
+/*# sourceMappingURL=main.css.map */
