@@ -8,7 +8,7 @@ var Presentation = new BLINDFOLDS.BlindfoldsPresentation({
             Blindfolds &mdash; Ethan John |SLCOUNT|
         </div>
     `,
-    PresentationName: "Why you should vote me for the school's IT Minister",
+    PresentationName: "Blindfolds",
 })
 
 // Template
@@ -50,7 +50,7 @@ var Intro = new BLINDFOLDS.BlindfoldsSlide({
         this a while ago for personal use. The pros of using Blindfolds, are:
         <ul>
             <li>Blindfolds is extremely {{lightweight}}</li>
-            <li>Blindfolds is very {{easy to set up}} &mdash; just import the Blindfolds.js file!</li>
+            <li>Blindfolds is very {{easy to set up}} &mdash; just import the Blindfolds.js, and main.css file!</li>
         </ul>
     `, 
 })
