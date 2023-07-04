@@ -81,7 +81,7 @@ var TitleSlide = new BLINDFOLDS.BlindfoldsSlide({
 ```
 
 We import parameters from the template with `...SlideTemplateConfiguration`. `Title` is the title of the slide. `Content` is the content shown on the slide. `AdditionalTitleStyling` is CSS styling added to the title,
-and `AdditionalContentStyling` is CSS styling added to the content.
+and `AdditionalContentStyling` is CSS styling added to the content. You may also wrap the title and content in `{{` and `}}` to apply the `Importance` class on them, which can be customized in `main.css`
 
 You may create all your slides in the same manner. To finally run the presenation, we use the object we created to initialize the presentation, and call the `Run()` function and pass the slides in an array
 as the only argument.
@@ -89,3 +89,31 @@ as the only argument.
 ```js
 Presentation.Run([TitleSlide, Slide2, Slide3, End]);
 ```
+# Documentation/Reference
+### class BlindfoldsPresentation(Options)
+Takes an `Options` argument, which accepts:
+`SlideCount` (type: Number)
+`FixedHTML` (type: String)
+`PresentationName` (type: String)
+
+### class BlindfoldsSlide(Options)
+Takes an `Options` argument, which accepts:
+`ContentFontSize` (type: String) (Has to be a string, because the CSS measurement is also passed on with it, for example `1.5em`)
+`TitleFontSize` (type: String) (Has to be a string, because the CSS measurement is also passed on with it, for example `1.5em`)
+
+`Title` (type: String)
+`Content` (type: String)
+
+`BackgroundColor` (type: String) (accept CSS coloring method, for example `black`)
+`FontColor` (type: String) (accept CSS coloring method, for example `indianred`)
+
+`AdditionalTitleClasses` (type: String)
+`AdditionalContentClasses` (type: String)
+
+`AdditionalTitleStyling` (type: String)
+`AdditionalContentStyling` (type: String)
+
+`ExtraHTML` (type: String)
+
+### BlindfoldsPresentation.Run(SlClasses)
+`SlClasses` (type: Array of `BlindfoldsSlide`)
