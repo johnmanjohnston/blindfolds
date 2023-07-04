@@ -92,28 +92,42 @@ Presentation.Run([TitleSlide, Slide2, Slide3, End]);
 # Documentation/Reference
 ### class BlindfoldsPresentation(Options)
 Takes an `Options` argument, which accepts:
+
 `SlideCount` (type: Number)
+
 `FixedHTML` (type: String)
+
 `PresentationName` (type: String)
 
 ### class BlindfoldsSlide(Options)
 Takes an `Options` argument, which accepts:
+
 `ContentFontSize` (type: String) (Has to be a string, because the CSS measurement is also passed on with it, for example `1.5em`)
+
 `TitleFontSize` (type: String) (Has to be a string, because the CSS measurement is also passed on with it, for example `1.5em`)
 
+
 `Title` (type: String)
+
 `Content` (type: String)
 
 `BackgroundColor` (type: String) (accept CSS coloring method, for example `black`)
+
 `FontColor` (type: String) (accept CSS coloring method, for example `indianred`)
 
+
 `AdditionalTitleClasses` (type: String)
+
 `AdditionalContentClasses` (type: String)
 
+
 `AdditionalTitleStyling` (type: String)
+
 `AdditionalContentStyling` (type: String)
+
 
 `ExtraHTML` (type: String)
 
 ### BlindfoldsPresentation.Run(SlClasses)
+
 `SlClasses` (type: Array of `BlindfoldsSlide`)
