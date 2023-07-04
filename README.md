@@ -69,8 +69,8 @@ To create a slide, you can use the `BlindfoldsSlide` class:
 var TitleSlide = new BLINDFOLDS.BlindfoldsSlide({
     ...SlideTemplateConfiguration,
 
-    Title: "Your {{Stupid}} Title Goes Here",
-    Content: "mmfhgmf.,. beans are tasty",
+    Title: "This Is {{Blindfolds}}.",
+    Content: "A {{JavaScript-based presentation library}} I programmed a while ago.",
     
     AdditionalTitleStyling: "position: absolute; top: 45vh; left: 50%; transform: translate(-50%, -50%);",
     AdditionalContentStyling: "text-align: center; position: absolute; top: 57%; left: 50%; transform: translate(-50%, -50%);",
@@ -80,10 +80,15 @@ var TitleSlide = new BLINDFOLDS.BlindfoldsSlide({
 })
 ```
 
+The slide above would generate a slide resembling the following: 
+
+![image](https://github.com/johnmanjohnston/blindfolds/assets/97091148/934e8fbb-2623-4117-96a5-4e38f109198c)
+
+
 We import parameters from the template with `...SlideTemplateConfiguration`. `Title` is the title of the slide. `Content` is the content shown on the slide. `AdditionalTitleStyling` is CSS styling added to the title,
 and `AdditionalContentStyling` is CSS styling added to the content. You may also wrap the title and content in `{{` and `}}` to apply the `Importance` class on them, which can be customized in `main.css`
 
-You may create all your slides in the same manner. To finally run the presenation, we use the object we created to initialize the presentation, and call the `Run()` function and pass the slides in an array
+You may create all your slides in the same manner. To finally run the presentation, we use the object we created to initialize the presentation, call the `Run()` function, and pass the slides in an array
 as the only argument.
 
 ```js
