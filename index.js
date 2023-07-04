@@ -49,8 +49,9 @@ var Intro = new BLINDFOLDS.BlindfoldsSlide({
         This is a library I programmed to make presentations. I programmed
         this a while ago for personal use. The pros of using Blindfolds, are:
         <ul>
-            <li>Blindfolds is extremely {{lightweight}}</li>
-            <li>Blindfolds is very {{easy to set up}} &mdash; just import the Blindfolds.js, and main.css file!</li>
+            <li>Blindfolds is extremely {{lightweight}}!</li>
+            <li>Blindfolds is {{easy to set up}}, just import the Blindfolds.js, and 
+            main.css files!</li>
         </ul>
     `, 
 })
